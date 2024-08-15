@@ -1,0 +1,46 @@
+<?php
+session_start();
+
+    if(!isset($_SESSION['name'])){
+        header("location:login.php?log=logintoorder");
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <nav>
+        <a href="index.php"><img src=""></a>
+        <div class="nlinks">
+          <ul>
+        <li><a href="index.php"> HOME </a></li>
+        <li><a href="login.php"> LOG IN </a></li>
+    
+        </ul>
+        </div>
+        </nav>
+
+        <div class="products-container">
+            <div class="product-header">
+                <h4 class="product-title">PRODCUT</h4>
+                <h4 class="price">PRICE</h4>
+                <h4 class="quantity">Quantity</h4>
+                <h4 class="total">TOTAL</h4>
+
+            </div>
+            <div class="products">
+
+            </div>
+        </div>
+
+<script src="food.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
